@@ -1,6 +1,6 @@
-var ClozeCard = function(text, close) {
+var ClozeCard = function(text, cloze) {
 	this.text = text;
-	this.cloze = close;
+	this.cloze = cloze;
 }
 
 module.exports = ClozeCard;

@@ -36,8 +36,8 @@ function createBasic() {
 		name: "back",
 		message: "Write out the answer."
 	}]).then(function(answers) {
-		var newCard = new basic(answers.front, answers.back);
-		basicArray.push(newCard);
+		var newBasic = new basic(answers.front, answers.back);
+		basicArray.push(newBasic);
 		console.log(basicArray);
 	});
 };
@@ -48,15 +48,15 @@ function createBasic() {
 function createCloze() {
 	inquirer.prompt([{
 		type: "input",
-		name: "full",
+		name: "text",
 		message: "Write out the full statement."
 	}, {
 		type: "input",
-		name: "clozed",
+		name: "cloze",
 		message: "Which word(s) in the full statement do you want omitted?"
 	}]).then(function(answers) {
-		var newCard = new cloze(answers.text, answers.cloze);
-		clozeArray.push(newCard);
+		var newCloze = new cloze(answers.text, answers.cloze);
+		clozeArray.push(newCloze);
 		console.log(clozeArray);
 	});
 };
