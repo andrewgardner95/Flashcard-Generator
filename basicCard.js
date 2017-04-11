@@ -1,4 +1,4 @@
-var basicCard = function(front, back) {
+var BasicCard = function(front, back) {
 	this.front = front;
 	this.back = back;
 	this.print = function(){
@@ -6,4 +6,4 @@ var basicCard = function(front, back) {
 	}
 }
 
-module.exports = basicCard;
+module.exports = BasicCard;
